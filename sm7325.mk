@@ -290,6 +290,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MotoActions
 
+# MotoCharger
+PRODUCT_PACKAGES += \
+    MotoCharger_animation
+
 # Neural Networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
