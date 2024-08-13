@@ -310,6 +310,11 @@ on boot
    chown system system /sys/class/capsense/reset
    chown system system /sys/class/capsense/int_state
 
+   # Charger
+   wait /sys/class/power_supply/battery/device/force_charger_suspend
+   chmod 0664 /sys/class/power_supply/battery/device/force_charger_suspend
+   chown vendor_tcmd system /sys/class/power_supply/battery/device/force_charger_suspend
+
 on late-fs-charger
     class_start early_hal
     mount_all /vendor/etc/fstab.qcom --late
