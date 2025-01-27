@@ -1,2 +1,0 @@
-# Vibrator
-type vendor_sysfs_vibrator, fs_type, sysfs_type;
