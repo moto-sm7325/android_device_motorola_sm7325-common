@@ -99,9 +99,6 @@ ifeq ($(TARGET_HAS_SNXXX_NFC),)
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_nfc.xml
 endif
 
-# Media
-TARGET_USES_ION := true
-
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
