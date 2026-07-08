@@ -1,0 +1,2 @@
+get_prop(hal_health_default, vendor_soc_id_prop)
+
