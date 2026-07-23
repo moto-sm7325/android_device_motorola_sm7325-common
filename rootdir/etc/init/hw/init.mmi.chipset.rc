@@ -1,3 +1,6 @@
+# Charge only mode configuration
+import /vendor/etc/init/hw/init.mmi.charge_only.rc
+
 on post-fs
     # MOT_LED_CALIBRATION
     chown camera camera /mnt/vendor/persist/camera/mot_ledcal
