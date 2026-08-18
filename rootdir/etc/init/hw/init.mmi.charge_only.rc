@@ -31,7 +31,7 @@ on moto-charger
     write /sys/devices/system/cpu/cpu7/online 0
 
 service vendor.thermal-com /vendor/bin/thermal-engine --minimode
-    class charger
+    class main
     user root
     group root system oem_2907
     socket thermal-send-client stream 0666 system oem_2907
