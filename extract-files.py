@@ -53,7 +53,10 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('/system/', '/system_ext/'),
     'system_ext/priv-app/ims/ims.apk': blob_fixup()
         .apktool_patch('ims-patches'),
-    'vendor/bin/init.kernel.post_boot.sh': blob_fixup()
+    (
+    'vendor/bin/init.kernel.post_boot-lahaina.sh',
+    'vendor/bin/init.kernel.post_boot-yupik.sh',
+    ): blob_fixup()
         .regex_replace('ro.boot.using_zram_from_fstab', 'ro.vendor.zram.swapon'),
     'vendor/etc/sensors/hals.conf': blob_fixup()
         .add_line_if_missing('sensors.moto_ext.so'),
