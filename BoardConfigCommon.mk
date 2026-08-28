@@ -41,7 +41,6 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_SOURCE := kernel/motorola/sm7325
 TARGET_KERNEL_CONFIG := vendor/lahaina-qgki_defconfig vendor/lineage_moto-lahaina.config
-TARGET_KERNEL_CLANG_VERSION := r563880c
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
